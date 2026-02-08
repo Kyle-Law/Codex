@@ -1,0 +1,128 @@
+.aih-highlight {
+  background: linear-gradient(transparent 58%, #ffe066 58%);
+  cursor: pointer;
+  position: relative;
+}
+
+.aih-tooltip {
+  position: absolute;
+  z-index: 2147483646;
+  max-width: 280px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.aih-floating-btn {
+  position: absolute;
+  z-index: 2147483647;
+  border: none;
+  border-radius: 999px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(26, 115, 232, 0.35);
+}
+
+.aih-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aih-modal {
+  width: min(720px, 92vw);
+  max-height: 92vh;
+  overflow: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.aih-modal h3 {
+  margin: 0 0 8px;
+}
+
+.aih-modal p {
+  margin: 0 0 12px;
+  color: #444;
+}
+
+.aih-field {
+  margin-bottom: 12px;
+}
+
+.aih-field label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.aih-field input,
+.aih-field textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.aih-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.aih-modal button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.aih-modal button.aih-save {
+  background: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+
+.aih-detail-card {
+  position: absolute;
+  z-index: 2147483646;
+  width: min(420px, 90vw);
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.aih-detail-card h4 {
+  margin: 0 0 8px;
+}
+
+.aih-detail-card .aih-small {
+  color: #444;
+  margin: 0 0 10px;
+}
+
+.aih-detail-card ul {
+  margin: 6px 0 0 20px;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Article Insight Highlighter</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        margin: 0;
+        padding: 12px;
+        width: 320px;
+      }
+      h3 { margin: 0 0 8px; }
+      p { margin: 0 0 10px; color: #444; }
+      button {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 8px 10px;
+        cursor: pointer;
+        background: #fff;
+        margin-right: 6px;
+      }
+      .row { margin-bottom: 10px; }
+      .note {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Article Insight Highlighter</h3>
+    <p>Data is saved in <code>chrome.storage.local</code> on this browser profile.</p>
+    <div class="row">
+      <button id="export">Export JSON</button>
+      <button id="import">Import JSON</button>
+      <input type="file" id="file" accept="application/json" style="display:none" />
+    </div>
+    <div class="note">
+      Chrome extensions cannot silently write to arbitrary local folders. Use Export/Import for local files backup.
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
